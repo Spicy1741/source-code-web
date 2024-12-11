@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Car<span>Point</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="cart.html">Your Cart</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="profile.html">Your profile</a></li>
+            </ul>
+            
+            <div class="search-box container">
+                <input type="search" placeholder="Search here...">
+            </div>
+            <a href="login.html" id="login-btn" class="btn login-btn">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-section">
+           <br> <h1>User Profile</h1>
+            <form id="profileForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

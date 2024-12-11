@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CarPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Car<span>Point</span></a>
+            <ul class="navbar">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="cart.html" class="active">Your Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Items will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

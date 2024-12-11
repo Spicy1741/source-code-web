@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CarPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Car<span>Point</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="cart.html">Your Cart</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="profile.html">Your profile</a></li>
+            </ul>
+            
+            <div class="search-box container">
+                <input type="search" placeholder="Search here...">
+            </div>
+            <a href="login.html" id="login-btn" class="btn login-btn">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <br><h1>Contact Us</h1>
+            <p>Feel free to reach out to us for any inquiries or feedback.</p>
+            
+            <div class="contact-details">
+                <div class="contact-info">
+                    <i class="fa fa-map-marker"></i> Address: 123 Main Street, City, Country
+                </div>
+                <div class="contact-info">
+                    <i class="fa fa-phone"></i> Phone: +1234567890
+                </div>
+                <div class="contact-info">
+                    <i class="fa fa-envelope"></i> Email: info@yourcompany.com
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <input type="text" id="fullName" placeholder="Your Full Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Type your message here" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Thank you for your feedback!</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        <section class="footer">
+            <div class="footer-container container">
+                <div class="footer-box">
+                    <a href="#" class="logo">Car<span>Point</span></a>
+                        <div class="social">
+                            <a href="#"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-youtube' ></i></a>
+                        </div>
+                </div>
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Cars</a>
+                    <a href="#">Part</a>
+                    <a href="#">Sales</a>
+    
+                </div>
+                <div class="footer-box">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Refund Privacy</a>
+                    <a href="#">Parts</a>
+                    <a href="#">Sales</a>
+    
+                </div>
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <a href="#">sdt cua gara</a>
+                    <a href="#">sdt cua gara</a>
+                    <a href="#">sdt cua gara</a>
+                </div>
+            </div>
+    
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

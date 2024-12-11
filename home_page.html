@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarPoint</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Car<span>Point</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="cart.html">Your Cart</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="profile.html">Your profile</a></li>
+            </ul>
+            
+            <div class="search-box container">
+                <input type="search" placeholder="Search here...">
+            </div>
+            <a href="login.html" id="login-btn" class="btn login-btn">Login</a>
+        </div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We have everything your <span>car</span><br> needs</h1>
+            <a href="#" class="btn">Discover Now</a>
+        </div>
+
+    </section>
+    <!--muc ve xe-->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>All car</span>
+            <h2>we have all types of cars</h2>
+            <p>chua co j de dien</p>
+        </div>
+        <!--o chua xe-->
+        <div class="cars-container container">
+            
+            <!--o 1-->
+            <div class="box">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Sedan</h3>
+                <span>15,000$</span>
+                <i class='bx bxs-star'>(4.5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Sedan" data-price="15000" data-img="car1.jpg">Add to Cart</button>
+                
+             
+            </div>
+            <div class="box">
+                <img src="car2.jpg" alt="Car 2">
+                <h3>SUV</h3>
+                <span>20,000$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="SUV" data-price="20000" data-img="car2.jpg">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="car3.jpg" alt="Car 3">
+                <h3>Convertible</h3>
+                <span>30,000$</span>
+                <i class='bx bxs-star'>(4.8 reviews)</i>
+                <button class="btn add-to-cart" data-name="Convertible" data-price="30000" data-img="car3.jpg">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="car4.jpg" alt="Car 4">
+                <h3>xe 4</h3>
+                <span>40,000$</span>
+                <i class='bx bxs-star'>(4.5 reviews)</i>
+                <button class="btn add-to-cart" data-name="xe4" data-price="30000" data-img="car4.jpg">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="car5.jpg" alt="Car 5">
+                <h3>xe5 </h3>
+                <span>45,000$</span>
+                <i class='bx bxs-star'>(4.5 reviews)</i>
+                <button class="btn add-to-cart" data-name="xe 5" data-price="45000" data-img="car5.jpg">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="car6.jpg" alt="Car 6">
+                <h3>xe6</h3>
+                <span>50,000$</span>
+                <i class='bx bxs-star'>(4.5 reviews)</i>
+                <button class="btn add-to-cart" data-name="xe6" data-price="50000" data-img="car6.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!--about-->
+    <section class="about container"id="about">
+        <div class="about-png">
+            <img src="about.png" alt="">
+        </div>
+         <div class="about-text">
+            <span> About us</span>
+            <h2>cheap price with <br>quanlity cars</h2>
+            <p>chua biet dien j </p>
+            <!--about button-->
+            <br><a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="parts" id="parts">
+        <div class="heading">
+            <span>What we offer</span>
+            <h2>Our car is always execellent</h2>
+            <p>chua biet dien j</p>
+        </div>
+        <!--part container-->
+        <div class="parts-container container">
+            <!-- Example for Box 1 -->
+            <div class="box">
+                <img src="part1.png" alt="">
+                <h3>Auto spare Parts</h3>
+                <span>119.99$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 1" data-price="119.99" data-img="part1.png">Add to Cart</button>
+                
+            </div>
+            <!--box2-->
+            <div class="box">
+                <img src="part2.png" alt="">
+                <h3>Auto spare Parts</h3>
+                <span>119.99$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 2" data-price="119.99" data-img="part2.png">Add to Cart</button>
+               
+            </div>
+            <!--box3-->
+            <div class="box">
+                <img src="part3.png" alt="">
+                <h3>Auto spare Parts</h3>
+                <span>119.99$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 3" data-price="119.99" data-img="part3.png">Add to Cart</button>
+                
+            </div>
+            <!--box4-->
+            <div class="box">
+                <img src="part4.png" alt="">
+                <h3>Auto spare Parts</h3>
+                <span>119.99$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 4" data-price="119.99" data-img="part4.png">Add to Cart</button>
+                
+            </div>
+            <!--box5-->
+            <div class="box">
+                <img src="part5.png" alt="">
+                <h3>Auto spare Parts</h3>
+                <span>1139$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 5" data-price="119.99" data-img="part5.png">Add to Cart</button>
+               
+            </div>
+            <!--box6-->
+            <div class="box">
+                <img src="part6.png" alt="">
+                   <h3>Auto spare Parts</h3>
+                <span>119$</span>
+                <i class='bx bxs-star'>(5 reviews)</i>
+                <button class="btn add-to-cart" data-name="Auto spare Parts 6" data-price="119.99" data-img="part6.png">Add to Cart</button>
+                
+            </div>
+        </div>
+    </section>
+    <!--blog-->
+    <section class="blog" id="blog">
+        <div class="heading">
+            <span>blog and new</span>
+            <h2>our blog content</h2>
+            <p>chua biet dien j </p>
+        </div>
+        <!--box1-->
+         <div class="blog-container container">
+        
+            <div class="box">
+                <img src="car1.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="https://www.jdpower.com/cars-for-sale/make-toyota/model-supra" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!--box2-->
+            <div class="box">
+                <img src="car2.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!--box3-->
+            <div class="box">
+                <img src="car3.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="#" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!--box4-->
+            <div class="box">
+                <img src="car4.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="#" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!--box5-->
+            <div class="box">
+                <img src="car5.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="#" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+        <!--box6-->
+            <div class="box">
+                <img src="car6.jpg" alt="">
+                <span>11/22/2024</span>
+                <h3>how to get perfect car at low price</h3>
+                <p>chua biet dien j </p>
+                <a href="#" class="blog-btn">read more<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Car<span>Point</span></a>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Cars</a>
+                <a href="#">Part</a>
+                <a href="#">Sales</a>
+
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Privacy</a>
+                <a href="#">Parts</a>
+                <a href="#">Sales</a>
+
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">sdt cua gara</a>
+                <a href="#">sdt cua gara</a>
+                <a href="#">sdt cua gara</a>
+            </div>
+        </div>
+
+    </section>
+
+        
+
+
+    </div>
+    <script src="main.js"></script>
+
+    
+    
+</body>
+</html>

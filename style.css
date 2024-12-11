@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-corlor:#d90429 ;
+    --text-corlor:#020102;
+    --bg-corlor:#fff;
+}
+section{
+    padding: 4rem 0 2rem;
+}
+img{
+    width: 100%;
+}
+body {
+    color: var(--text-corlor)
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right:auto;
+
+}
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+header.scrolled {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 35px;
+
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color:var(--text-corlor);
+    display: none;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-corlor)
+    
+}
+.logo span{
+    color: var(--main-corlor);
+
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    
+}
+.navbar a {
+    color: var(--text-corlor);
+    font-size: 1rem;
+    text-transform: 500;
+    text-decoration: none;
+    
+}
+.navbar a:hover,
+.navbar .active{
+    color: var(--main-corlor);
+    border-bottom: 3px solid var(--main-corlor);
+    
+}
+
+     
+
+.search-box{
+    position:absolute;
+    right: 0%;
+    left: 0;
+    border-radius: 0,5rem;
+    border: 1px solid var(--main-corlor);
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rbg(15 54 55 / 10%);
+    clip-path: circle(0% at 100% 0%);
+    top: 110%
+    
+    
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+}
+.search-box input{
+    width: 100;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+.home{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(Background-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+.home-text{
+    padding-left: 130px;
+}
+
+.home-text h1{
+    font-size: 2.4rem;
+}
+.home-text span{
+    color: var(--main-corlor);
+}
+.home-text p {
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn{
+    padding: 10px 22px;
+    background: var(--main-corlor);
+    color: var(--bg-corlor);
+    font-weight:400;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: rgb(254, 1, 1); 
+}
+/*muc ve xe*/
+.heading { 
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    color: var(--main-corlor);
+
+}
+.heading p {
+    font-size:0.938rem;
+    font-weight: 300;
+}
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.cars-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.cars-container .box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.cars-container .box span {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+.cars-container .box i {
+    color: #f4b400; /* Star color */
+    margin-bottom: 10px;
+}
+.cars-container .button-container {
+    margin-top: 10px; /* Add some space above the button */
+}
+.cars-container .box img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.cars-container .box img{
+   width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+.cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0,5s;
+}
+.cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--bg-corlor);
+    padding: 8px;
+    border-radius: 0,5rem;
+}
+.cars-container .box:hover h2 {
+    background: var(--main-corlor);
+    color: var(--bg-color);
+}
+
+.cars-container .btn.add-to-cart {
+    background-color: #d90429; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+.cars-container .box .details{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: var(--text-corlor);
+}
+.about{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-png{
+    flex: 1 1 21rem; 
+}
+.about-text{
+    flex: 1 1 21rem;
+}
+.about-text span{
+    font-weight: 500;
+    color: var(--main-corlor);
+
+}
+.about-text h2{
+    font-size: 1.7rem;
+}
+
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0,5rem 0 1.4rem;
+}
+.parts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.parts-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    border-radius: 0.5rem;
+}
+.parts-container .box img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+
+}
+.parts-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.parts-container .box span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-corlor);
+
+}
+.parts-container .box .bx{
+    color: var(--main-corlor);
+    margin: 0.8rem 0;
+}
+.parts-container .box .btn{
+    background-color: #d90429; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+.parts-container .box .details:hover{
+    color: var(--main-corlor);
+    text-decoration: underline;
+}
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.blog-container .box{
+    flex: 1 1 13rem;
+    padding: 20px;
+    
+}
+.blog-container .box:hover {
+    background: #f6f6f6;
+}
+.blog-container .box span{
+    font-size: 0.8rem;
+    color:var(--main-corlor);
+}
+.blog-container h3{
+    font-size: 1.2rem;
+}
+.blog-container .box p {
+    font-size: 0.938rem;
+    margin: 4px 0;
+}
+.blog-container .box .blog-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color:var(--text-corlor);
+
+}
+.blog-container .box .blog-btn .bx {
+    font-size: 20;
+}
+.blog-container .box .blog-btn:hover {
+    color: var(--main-corlor);
+    column-gap: 0.7rem;
+
+} 
+
+.footer{
+    background: var(--text-corlor);
+    color:#f6f6f6;
+    border-top: 2px solid var(--main-corlor);
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.footer-container .logo{
+    color: var(--bg-corlor);
+    margin-bottom: 1rem;
+
+}
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+
+}
+.social {
+    display: flex;
+    align-items: center;
+}
+.social a{
+    font-size: 24px;
+    color: var(--bg-corlor);
+    margin-right: 1rem;
+}
+.social a:hover {
+    color: var(--main-corlor);
+
+}
+.footer-box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+.footer-box a,
+.footer-box p {
+    color: #818181;
+}
+
+.login-section, .signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container, .signup-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b3adae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-section {
+    padding: 2rem;
+}
+
+.cart-container {
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart-total {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+
+button.decrease-quantity, button.increase-quantity {
+    font-size: 1rem; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    background-color: #f4f4f4; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+    padding: 0; 
+    cursor: pointer;
+}
+
+/* Add hover effect for better interaction */
+button.decrease-quantity:hover, button.increase-quantity:hover {
+    background-color: #ddd; /* Slightly darker background on hover */
+}
+
+/* Adjust the button text size */
+button.decrease-quantity, button.increase-quantity {
+    font-weight: bold; /* Make the + and - bolder */
+    font-size: 16px; /* Set the font size */
+    color: #333; /* Set the font color */
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #ffffff;
+    color: #060000;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #e71616;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ea0909;
+}
+
+/* Existing CSS styles */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f6f6f6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile-section {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
